@@ -206,38 +206,78 @@ Is the reasoning clear enough for a program leader to challenge, approve, reject
 
 ## Representative Decision Scenario
 
-### Situation
+### Data Center Migration Delay
 
-Leadership must choose between multiple initiatives competing for the same engineering capacity.
+The public demonstration includes a scenario in which a primary infrastructure vendor reports a **four-week hardware delivery delay** affecting a US-East data-center migration.
 
-Each initiative has different:
+Checkmate evaluates the scenario as a program decision rather than simply summarizing the issue.
 
-* Revenue or strategic value
-* Delivery urgency
-* Technical complexity
-* Resource requirements
-* Dependencies
-* Risk exposure
+![Checkmate AI Representative Decision Output](checkmate-ai-decision-output.png)
 
-### Traditional Approach
+### Decision Intelligence Produced
 
-A TPM may need to manually reconcile:
+The system generates several layers of program intelligence:
 
-* Status reports
-* RAID logs
-* Financial information
-* Engineering estimates
-* Roadmaps
-* Stakeholder requests
-* Dependency documentation
+**Primary Recommendation**
 
-### Checkmate Approach
+> Investigate the reported four-week hardware delivery delay and decide whether the US-East migration plan should be adjusted.
 
-The system organizes those signals into a structured analytical workflow and produces:
+**Risk Analysis**
 
-**Risk Analysis → Dependency Analysis → Prioritization → Recommendation → Human Review**
+The delayed hardware delivery may affect the planned US-East migration.
 
-The executive receives both a recommendation and the reasoning required to challenge it.
+**Dependency Analysis**
+
+The migration is dependent on hardware delivery from the primary vendor, creating a direct schedule dependency.
+
+### RAID Memory
+
+The system structures the scenario into persistent program intelligence:
+
+| RAID Element | Identified Signal |
+|---|---|
+| **Risk** | Four-week hardware delivery delay |
+| **Assumption** | Vendor-reported delay is accurate |
+| **Issue** | Required hardware delivery is delayed |
+| **Dependency** | US-East migration depends on primary-vendor hardware delivery |
+
+This allows decision intelligence to become part of the program's operating memory rather than disappearing after an AI interaction.
+
+### Validation Layer
+
+Before presenting the decision brief, a validation step checks whether unsupported details have been introduced.
+
+In this representative cached scenario, the validation layer reports that it found **no unsupported details in the brief**.
+
+This illustrates an important design principle:
+
+> AI-generated recommendations should be evaluated before they become decision artifacts.
+
+### Human Decision Boundary
+
+Checkmate does not automatically execute the recommendation.
+
+The responsible program leader is presented with an explicit decision:
+
+**Approve & Commit to RAID**
+
+or
+
+**Reject & Regenerate**
+
+This maintains human accountability while allowing AI to accelerate analysis, synthesis, and program documentation.
+
+---
+
+### Why This Matters
+
+The objective is not to have an LLM tell a program manager what to do.
+
+The objective is to transform fragmented program signals into:
+
+**Issue → Risk → Dependency → Recommendation → Validation → Human Decision → Program Memory**
+
+That creates a traceable decision workflow instead of an isolated AI-generated answer.
 
 ---
 
