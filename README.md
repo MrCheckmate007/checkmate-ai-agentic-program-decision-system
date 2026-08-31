@@ -67,45 +67,7 @@ The objective is **decision support, not autonomous executive authority**.
 
 ## Agentic Decision Architecture
 
-```text
-┌───────────────────────┐
-│       User / TPM      │
-└───────────┬───────────┘
-            ↓
-┌───────────────────────┐
-│     Program Data      │
-│ priorities • risks    │
-│ resources • context   │
-└───────────┬───────────┘
-            ↓
-┌───────────────────────┐
-│ Agentic Decision      │
-│ Engine                │
-└───────────┬───────────┘
-            ↓
-┌───────────────────────┐
-│ Risk & Dependency     │
-│ Analysis              │
-└───────────┬───────────┘
-            ↓
-┌───────────────────────┐
-│ Prioritization &      │
-│ Constraint Analysis   │
-└───────────┬───────────┘
-            ↓
-┌───────────────────────┐
-│ Recommendation &      │
-│ Validation            │
-└───────────┬───────────┘
-            ↓
-┌───────────────────────┐
-│ Human Approval Gate   │
-└───────────┬───────────┘
-            ↓
-┌───────────────────────┐
-│ Executive Decision    │
-└───────────────────────┘
-````
+![Checkmate AI Agentic Decision Architecture](checkmate-ai-architecture.png)
 
 ### Architectural Principle
 
