@@ -280,7 +280,64 @@ The objective is to transform fragmented program signals into:
 That creates a traceable decision workflow instead of an isolated AI-generated answer.
 
 ---
+## Agentic Workflow in Action
 
+The public demonstration exposes the major stages of the Checkmate decision workflow so the system can be inspected rather than presented as a black-box AI response.
+
+### 1. Grounded Scenario Selection
+
+![Checkmate AI Scenario Selection](01-scenario-selection.png)
+
+The public demo uses predefined, grounded scenarios. Custom analysis is intentionally restricted in the public environment to control inference cost, limit abuse, and avoid implying that the portfolio prototype is a production decision system.
+
+---
+
+### 2. Specialized Agent Execution
+
+![Checkmate AI Agent Execution](02-agent-execution.png)
+
+Once a scenario is executed, specialized analytical responsibilities operate sequentially:
+
+**Risk Agent → Dependency Agent → Decision Agent → Executive Advisor → Validation Agent**
+
+This decomposition allows each analytical responsibility to contribute to the final decision brief while maintaining a visible orchestration path.
+
+The architecture intentionally separates responsibilities instead of relying on a single monolithic prompt.
+
+---
+
+### 3. Validated Executive Decision Brief
+
+![Checkmate AI Executive Decision Brief](03-executive-decision-brief.png)
+
+The resulting decision brief combines:
+
+- Primary recommendation
+- Risk analysis
+- Dependency impact
+- RAID classification
+- Validation status
+- Human approval controls
+
+The Validation Agent checks the cached brief for unsupported details before the recommendation is presented for human review.
+
+---
+
+## Decision Lifecycle
+
+The demonstrated workflow can be summarized as:
+
+**Grounded Context → Risk Analysis → Dependency Analysis → Decision Analysis → Executive Synthesis → Validation → Human Approval → RAID Memory**
+
+The final interface deliberately exposes:
+
+**Reject & Regenerate**
+
+and
+
+**Approve & Commit to RAID**
+
+This boundary is central to Checkmate's governance model: **AI performs analysis; humans retain decision authority.**
 ## Responsible AI & Security Considerations
 
 A production implementation would require controls appropriate to the sensitivity of enterprise program data.
